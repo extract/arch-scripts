@@ -40,5 +40,5 @@ playback = PlaybackCtl()
 bus = dbus.SessionBus()
 bus.add_signal_receiver(catchall_handler,
                         interface_keyword='dbus_interface',
-			            path='/org/mpris/MediaPlayer2')
+                        path='/org/mpris/MediaPlayer2')
 loop.run()
